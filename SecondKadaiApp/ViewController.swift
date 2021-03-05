@@ -16,15 +16,14 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    // 遷移前処理
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let secondViewController: SecondViewController = segue.destination as! SecondViewController
-        secondViewController.labelMessage = nameTextField.text ?? ""
+        // 名前を設定
+        secondViewController.labelName = nameTextField.text ?? ""
     }
     
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
-        
     }
-
-
 }
 

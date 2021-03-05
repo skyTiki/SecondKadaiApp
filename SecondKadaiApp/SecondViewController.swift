@@ -10,11 +10,11 @@ import UIKit
 class SecondViewController: UIViewController {
 
     @IBOutlet weak var greetingLabel: UILabel!
-    var labelMessage: String = ""
+    var labelName: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        greetingLabel.text = "こんにちは、\(labelMessage)さん"
+        
+        greetingLabel.text = "こんにちは、\(labelName)さん"
     }
 }
